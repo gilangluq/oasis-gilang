@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest>=8
+# opsional: tafsir pertanyaan dengan LLM
+anthropic>=0.40

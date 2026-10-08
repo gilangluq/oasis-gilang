@@ -1,0 +1,1033 @@
+{
+ "_catatan": "Templat struktur kamus (tanpa nilai data) untuk membangkitkan workbook DEMO SIMULASI. Nilai data demo dibangkitkan acak oleh scripts/generate_demo_workbook.py.",
+ "kamus": [
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Periode",
+   "label_standar": "Periode",
+   "deskripsi": "Tanggal akhir bulan observasi; pada file sumber disimpan sebagai angka berformat YYYYMMDD.",
+   "tipe_data": "Tanggal kunci (numerik YYYYMMDD)",
+   "unit_raw": "Tanggal (YYYYMMDD)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Total Aset (Rp M)",
+   "label_standar": "Total Aset (Rp M)",
+   "deskripsi": "Total aset agregat subsektor pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Rp M (sesuai label sumber)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Total Kredit (Rp M)",
+   "label_standar": "Total Kredit (Rp M)",
+   "deskripsi": "Total outstanding kredit yang disalurkan pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Rp M (sesuai label sumber)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Total DPK (Rp M)",
+   "label_standar": "Total DPK (Rp M)",
+   "deskripsi": "Total Dana Pihak Ketiga (DPK) yang dihimpun pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Rp M (sesuai label sumber)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Giro (Rp M)",
+   "label_standar": "Giro (Rp M)",
+   "deskripsi": "Saldo giro sebagai komponen DPK pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Rp M (sesuai label sumber)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Tabungan (Rp M)",
+   "label_standar": "Tabungan (Rp M)",
+   "deskripsi": "Saldo tabungan sebagai komponen DPK pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Rp M (sesuai label sumber)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Deposito (Rp M)",
+   "label_standar": "Deposito (Rp M)",
+   "deskripsi": "Saldo deposito sebagai komponen DPK pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Rp M (sesuai label sumber)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Laba (Rp M)",
+   "label_standar": "Laba (Rp M)",
+   "deskripsi": "Nilai laba subsektor pada periode berjalan sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Rp M (sesuai label sumber)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Rasio LDR",
+   "label_standar": "Rasio LDR",
+   "deskripsi": "Loan to Deposit Ratio (LDR), indikator perbandingan kredit terhadap dana pihak ketiga.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Rasio CAR",
+   "label_standar": "Rasio CAR",
+   "deskripsi": "Capital Adequacy Ratio (CAR), indikator kecukupan modal.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Rasio NPL (Gemini)",
+   "label_standar": "Rasio NPL",
+   "deskripsi": "Rasio Non-Performing Loan (NPL) sesuai label pada sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Rasio NIM",
+   "label_standar": "Rasio NIM",
+   "deskripsi": "Net Interest Margin (NIM), indikator margin pendapatan bunga bersih terhadap aset produktif sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Rasio BOPO",
+   "label_standar": "Rasio BOPO",
+   "deskripsi": "Rasio Beban Operasional terhadap Pendapatan Operasional (BOPO).",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "field_asli_kamus": "Rasio ROA",
+   "label_standar": "Rasio ROA",
+   "deskripsi": "Return on Assets (ROA), indikator profitabilitas berbasis aset.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "BPR",
+   "domain": "Perbankan - Bank Perekonomian Rakyat (BPR)",
+   "field_asli_kamus": "Periode",
+   "label_standar": "Periode",
+   "deskripsi": "Tanggal akhir bulan observasi; pada file sumber disimpan sebagai angka berformat YYYYMMDD.",
+   "tipe_data": "Tanggal kunci (numerik YYYYMMDD)",
+   "unit_raw": "Tanggal (YYYYMMDD)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "BPR",
+   "domain": "Perbankan - Bank Perekonomian Rakyat (BPR)",
+   "field_asli_kamus": "Total Aset (Rp M)",
+   "label_standar": "Total Aset (Rp M)",
+   "deskripsi": "Total aset agregat subsektor pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Rp M (sesuai label sumber)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "BPR",
+   "domain": "Perbankan - Bank Perekonomian Rakyat (BPR)",
+   "field_asli_kamus": "Total Kredit",
+   "label_standar": "Total Kredit",
+   "deskripsi": "Total outstanding kredit yang disalurkan pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "BPR",
+   "domain": "Perbankan - Bank Perekonomian Rakyat (BPR)",
+   "field_asli_kamus": "DPK",
+   "label_standar": "DPK",
+   "deskripsi": "Total Dana Pihak Ketiga yang dihimpun pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "BPR",
+   "domain": "Perbankan - Bank Perekonomian Rakyat (BPR)",
+   "field_asli_kamus": "Deposito",
+   "label_standar": "Deposito",
+   "deskripsi": "Saldo deposito pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "BPR",
+   "domain": "Perbankan - Bank Perekonomian Rakyat (BPR)",
+   "field_asli_kamus": "Tabungan",
+   "label_standar": "Tabungan",
+   "deskripsi": "Saldo tabungan pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "BPR",
+   "domain": "Perbankan - Bank Perekonomian Rakyat (BPR)",
+   "field_asli_kamus": "Laba",
+   "label_standar": "Laba",
+   "deskripsi": "Nilai laba subsektor pada periode berjalan sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "BPR",
+   "domain": "Perbankan - Bank Perekonomian Rakyat (BPR)",
+   "field_asli_kamus": "Rasio LDR",
+   "label_standar": "Rasio LDR",
+   "deskripsi": "Loan to Deposit Ratio (LDR), indikator perbandingan kredit terhadap dana pihak ketiga.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "BPR",
+   "domain": "Perbankan - Bank Perekonomian Rakyat (BPR)",
+   "field_asli_kamus": "Rasio NPL",
+   "label_standar": "Rasio NPL",
+   "deskripsi": "Rasio Non-Performing Loan (NPL), indikator kualitas kredit.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "BPR",
+   "domain": "Perbankan - Bank Perekonomian Rakyat (BPR)",
+   "field_asli_kamus": "Rasio ROA",
+   "label_standar": "Rasio ROA",
+   "deskripsi": "Return on Assets (ROA), indikator profitabilitas berbasis aset.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "BPR",
+   "domain": "Perbankan - Bank Perekonomian Rakyat (BPR)",
+   "field_asli_kamus": "Rasio ROE",
+   "label_standar": "Rasio ROE",
+   "deskripsi": "Return on Equity (ROE), indikator profitabilitas berbasis ekuitas.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Periode",
+   "label_standar": "Periode",
+   "deskripsi": "Tanggal akhir bulan observasi; pada file sumber disimpan sebagai angka berformat YYYYMMDD.",
+   "tipe_data": "Tanggal kunci (numerik YYYYMMDD)",
+   "unit_raw": "Tanggal (YYYYMMDD)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Laba Asuransi Jiwa",
+   "label_standar": "Laba Asuransi Jiwa",
+   "deskripsi": "Nilai laba agregat subsektor asuransi jiwa pada periode berjalan sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Total Aset Asuransi Jiwa",
+   "label_standar": "Total Aset Asuransi Jiwa",
+   "deskripsi": "Total aset agregat subsektor asuransi jiwa pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Total Bukan Investasi Asuransi Jiwa",
+   "label_standar": "Total Bukan Investasi Asuransi Jiwa",
+   "deskripsi": "Total aset/pos bukan investasi pada subsektor asuransi jiwa.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Tagihan Klaim Reasuransi Asuransi Jiwa",
+   "label_standar": "Tagihan Klaim Reasuransi Asuransi Jiwa",
+   "deskripsi": "Variabel 'Tagihan Klaim Reasuransi Asuransi Jiwa' sebagaimana tercantum pada workbook sumber; definisi rinci perlu dikonfirmasi pada sumber data resmi.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Tagihan Klaim Koasuransi Asuransi Jiwa",
+   "label_standar": "Tagihan Klaim Koasuransi Asuransi Jiwa",
+   "deskripsi": "Nilai tagihan klaim terkait koasuransi pada subsektor asuransi jiwa.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Tagihan Premi Reasuransi Asuransi Jiwa",
+   "label_standar": "Tagihan Premi Reasuransi Asuransi Jiwa",
+   "deskripsi": "Variabel 'Tagihan Premi Reasuransi Asuransi Jiwa' sebagaimana tercantum pada workbook sumber; definisi rinci perlu dikonfirmasi pada sumber data resmi.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Tagihan Premi Penutupan Langsung Asuransi Jiwa",
+   "label_standar": "Tagihan Premi Penutupan Langsung Asuransi Jiwa",
+   "deskripsi": "Nilai tagihan premi dari penutupan langsung pada subsektor asuransi jiwa.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Total Investasi Asuransi Jiwa",
+   "label_standar": "Total Investasi Asuransi Jiwa",
+   "deskripsi": "Total nilai investasi subsektor asuransi jiwa.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Combined Rasio  Asuransi Jiwa",
+   "label_standar": "Combined Rasio  Asuransi Jiwa",
+   "deskripsi": "Combined Ratio subsektor asuransi jiwa; indikator gabungan kinerja underwriting sesuai formula pada sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "RBC  Asuransi Jiwa",
+   "label_standar": "RBC  Asuransi Jiwa",
+   "deskripsi": "Risk Based Capital (RBC) subsektor asuransi jiwa, indikator tingkat solvabilitas berbasis risiko.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Rasio Beban Usaha  Asuransi Jiwa",
+   "label_standar": "Rasio Beban Usaha  Asuransi Jiwa",
+   "deskripsi": "Rasio beban usaha subsektor asuransi jiwa sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Rasio Kecukupan Investasi  Asuransi Jiwa",
+   "label_standar": "Rasio Kecukupan Investasi  Asuransi Jiwa",
+   "deskripsi": "Rasio kecukupan investasi subsektor asuransi jiwa sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Rasio Klaim  Asuransi Jiwa",
+   "label_standar": "Rasio Klaim  Asuransi Jiwa",
+   "deskripsi": "Rasio klaim subsektor asuransi jiwa sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "field_asli_kamus": "Rasio Likuiditas  Asuransi Jiwa",
+   "label_standar": "Rasio Likuiditas  Asuransi Jiwa",
+   "deskripsi": "Rasio likuiditas subsektor asuransi jiwa sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Periode",
+   "label_standar": "Periode",
+   "deskripsi": "Tanggal akhir bulan observasi; pada file sumber disimpan sebagai angka berformat YYYYMMDD.",
+   "tipe_data": "Tanggal kunci (numerik YYYYMMDD)",
+   "unit_raw": "Tanggal (YYYYMMDD)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Laba Asuransi Umum",
+   "label_standar": "Laba Asuransi Umum",
+   "deskripsi": "Nilai laba agregat subsektor asuransi umum pada periode berjalan sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Total Aset Asuransi Umum",
+   "label_standar": "Total Aset Asuransi Umum",
+   "deskripsi": "Total aset agregat subsektor asuransi umum pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Total Bukan Investasi Asuransi Umum",
+   "label_standar": "Total Bukan Investasi Asuransi Umum",
+   "deskripsi": "Total aset/pos bukan investasi pada subsektor asuransi umum.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Tagihan Klaim Reasuransi Asuransi Umum",
+   "label_standar": "Tagihan Klaim Reasuransi Asuransi Umum",
+   "deskripsi": "Variabel 'Tagihan Klaim Reasuransi Asuransi Umum' sebagaimana tercantum pada workbook sumber; definisi rinci perlu dikonfirmasi pada sumber data resmi.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Tagihan Klaim Koasuransi Asuransi Umum",
+   "label_standar": "Tagihan Klaim Koasuransi Asuransi Umum",
+   "deskripsi": "Nilai tagihan klaim terkait koasuransi pada subsektor asuransi umum.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Tagihan Premi Reasuransi Asuransi Umum",
+   "label_standar": "Tagihan Premi Reasuransi Asuransi Umum",
+   "deskripsi": "Variabel 'Tagihan Premi Reasuransi Asuransi Umum' sebagaimana tercantum pada workbook sumber; definisi rinci perlu dikonfirmasi pada sumber data resmi.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Tagihan Premi Penutupan Langsung Asuransi Umum",
+   "label_standar": "Tagihan Premi Penutupan Langsung Asuransi Umum",
+   "deskripsi": "Nilai tagihan premi dari penutupan langsung pada subsektor asuransi umum.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Total Investasi Asuransi Umum",
+   "label_standar": "Total Investasi Asuransi Umum",
+   "deskripsi": "Total nilai investasi subsektor asuransi umum.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Combined Rasio  Asuransi Umum",
+   "label_standar": "Combined Rasio  Asuransi Umum",
+   "deskripsi": "Combined Ratio subsektor asuransi umum; indikator gabungan kinerja underwriting sesuai formula pada sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "RBC  Asuransi Umum",
+   "label_standar": "RBC  Asuransi Umum",
+   "deskripsi": "Risk Based Capital (RBC) subsektor asuransi umum, indikator tingkat solvabilitas berbasis risiko.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Rasio Beban Usaha  Asuransi Umum",
+   "label_standar": "Rasio Beban Usaha  Asuransi Umum",
+   "deskripsi": "Rasio beban usaha subsektor asuransi umum sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Rasio Kecukupan Investasi  Asuransi Umum",
+   "label_standar": "Rasio Kecukupan Investasi  Asuransi Umum",
+   "deskripsi": "Rasio kecukupan investasi subsektor asuransi umum sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Rasio Klaim  Asuransi Umum",
+   "label_standar": "Rasio Klaim  Asuransi Umum",
+   "deskripsi": "Rasio klaim subsektor asuransi umum sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "field_asli_kamus": "Rasio Likuiditas  Asuransi Umum",
+   "label_standar": "Rasio Likuiditas  Asuransi Umum",
+   "deskripsi": "Rasio likuiditas subsektor asuransi umum sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Periode",
+   "label_standar": "Periode",
+   "deskripsi": "Tanggal akhir bulan observasi; pada file sumber disimpan sebagai angka berformat YYYYMMDD.",
+   "tipe_data": "Tanggal kunci (numerik YYYYMMDD)",
+   "unit_raw": "Tanggal (YYYYMMDD)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Laba Reasuransi",
+   "label_standar": "Laba Reasuransi",
+   "deskripsi": "Nilai laba agregat subsektor reasuransi pada periode berjalan sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Total Aset Reasuransi",
+   "label_standar": "Total Aset Reasuransi",
+   "deskripsi": "Total aset agregat subsektor reasuransi pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Total Bukan Investasi Reasuransi",
+   "label_standar": "Total Bukan Investasi Reasuransi",
+   "deskripsi": "Total aset/pos bukan investasi pada subsektor reasuransi.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Tagihan Klaim Reasuransi Reasuransi",
+   "label_standar": "Tagihan Klaim Reasuransi Reasuransi",
+   "deskripsi": "Variabel 'Tagihan Klaim Reasuransi Reasuransi' sebagaimana tercantum pada workbook sumber; definisi rinci perlu dikonfirmasi pada sumber data resmi.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Tagihan Klaim Koasuransi Reasuransi",
+   "label_standar": "Tagihan Klaim Koasuransi Reasuransi",
+   "deskripsi": "Nilai tagihan klaim terkait koasuransi pada subsektor reasuransi.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Tagihan Premi Reasuransi Reasuransi",
+   "label_standar": "Tagihan Premi Reasuransi Reasuransi",
+   "deskripsi": "Variabel 'Tagihan Premi Reasuransi Reasuransi' sebagaimana tercantum pada workbook sumber; definisi rinci perlu dikonfirmasi pada sumber data resmi.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Tagihan Premi Penutupan Langsung Reasuransi",
+   "label_standar": "Tagihan Premi Penutupan Langsung Reasuransi",
+   "deskripsi": "Nilai tagihan premi dari penutupan langsung pada subsektor reasuransi.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Total Investasi Reasuransi",
+   "label_standar": "Total Investasi Reasuransi",
+   "deskripsi": "Total nilai investasi subsektor reasuransi.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Combined Rasio  Reasuransi",
+   "label_standar": "Combined Rasio  Reasuransi",
+   "deskripsi": "Combined Ratio subsektor reasuransi; indikator gabungan kinerja underwriting sesuai formula pada sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "RBC  Reasuransi",
+   "label_standar": "RBC  Reasuransi",
+   "deskripsi": "Risk Based Capital (RBC) subsektor reasuransi, indikator tingkat solvabilitas berbasis risiko.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Rasio Beban Usaha  Reasuransi",
+   "label_standar": "Rasio Beban Usaha  Reasuransi",
+   "deskripsi": "Rasio beban usaha subsektor reasuransi sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Rasio Kecukupan Investasi  Reasuransi",
+   "label_standar": "Rasio Kecukupan Investasi  Reasuransi",
+   "deskripsi": "Rasio kecukupan investasi subsektor reasuransi sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Rasio Klaim  Reasuransi",
+   "label_standar": "Rasio Klaim  Reasuransi",
+   "deskripsi": "Rasio klaim subsektor reasuransi sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "field_asli_kamus": "Rasio Likuiditas  Reasuransi",
+   "label_standar": "Rasio Likuiditas  Reasuransi",
+   "deskripsi": "Rasio likuiditas subsektor reasuransi sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Dana Pensiun",
+   "domain": "Dana Pensiun",
+   "field_asli_kamus": "Periode",
+   "label_standar": "Periode",
+   "deskripsi": "Tanggal akhir bulan observasi; pada file sumber disimpan sebagai angka berformat YYYYMMDD.",
+   "tipe_data": "Tanggal kunci (numerik YYYYMMDD)",
+   "unit_raw": "Tanggal (YYYYMMDD)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Dana Pensiun",
+   "domain": "Dana Pensiun",
+   "field_asli_kamus": "Deposito Berjangka",
+   "label_standar": "Deposito Berjangka",
+   "deskripsi": "Nilai penempatan investasi dana pensiun pada deposito berjangka.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Dana Pensiun",
+   "domain": "Dana Pensiun",
+   "field_asli_kamus": "SBN",
+   "label_standar": "SBN",
+   "deskripsi": "Nilai investasi pada Surat Berharga Negara (SBN).",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Dana Pensiun",
+   "domain": "Dana Pensiun",
+   "field_asli_kamus": "Obligasi Korporasi",
+   "label_standar": "Obligasi Korporasi",
+   "deskripsi": "Nilai investasi pada obligasi korporasi.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Dana Pensiun",
+   "domain": "Dana Pensiun",
+   "field_asli_kamus": "Total Investasi",
+   "label_standar": "Total Investasi",
+   "deskripsi": "Total nilai portofolio investasi pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Dana Pensiun",
+   "domain": "Dana Pensiun",
+   "field_asli_kamus": "Aset Neto",
+   "label_standar": "Aset Neto",
+   "deskripsi": "Nilai aset neto dana pensiun pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Dana Pensiun",
+   "domain": "Dana Pensiun",
+   "field_asli_kamus": "ROA",
+   "label_standar": "ROA",
+   "deskripsi": "Return on Assets (ROA) sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Dana Pensiun",
+   "domain": "Dana Pensiun",
+   "field_asli_kamus": "ROI R",
+   "label_standar": "ROI R",
+   "deskripsi": "Return on Investment (ROI) Realized",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Dana Pensiun",
+   "domain": "Dana Pensiun",
+   "field_asli_kamus": "ROI R+U",
+   "label_standar": "ROI R+U",
+   "deskripsi": "Return on Investment (ROI) Realized + Unrealized",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Dana Pensiun",
+   "domain": "Dana Pensiun",
+   "field_asli_kamus": "Rasio Investasi Terhadap Aset",
+   "label_standar": "Rasio Investasi Terhadap Aset",
+   "deskripsi": "Perbandingan nilai investasi terhadap aset.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Pasar Modal",
+   "domain": "Pasar Modal",
+   "field_asli_kamus": "Periode",
+   "label_standar": "Periode",
+   "deskripsi": "Tanggal akhir bulan observasi; pada file sumber disimpan sebagai angka berformat YYYYMMDD.",
+   "tipe_data": "Tanggal kunci (numerik YYYYMMDD)",
+   "unit_raw": "Tanggal (YYYYMMDD)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Pasar Modal",
+   "domain": "Pasar Modal",
+   "field_asli_kamus": "IHSG",
+   "label_standar": "IHSG",
+   "deskripsi": "Nilai Indeks Harga Saham Gabungan (IHSG) pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Poin indeks",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Pasar Modal",
+   "domain": "Pasar Modal",
+   "field_asli_kamus": "Perusahaan Tercatat",
+   "label_standar": "Perusahaan Tercatat",
+   "deskripsi": "Jumlah perusahaan tercatat pada periode tersebut.",
+   "tipe_data": "Numerik - integer",
+   "unit_raw": "Perusahaan",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Pasar Modal",
+   "domain": "Pasar Modal",
+   "field_asli_kamus": "Kapitalisasi Pasar (Rp Triliun)",
+   "label_standar": "Kapitalisasi Pasar (Rp Triliun)",
+   "deskripsi": "Total kapitalisasi pasar saham perusahaan tercatat.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Rp triliun",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Pasar Modal",
+   "domain": "Pasar Modal",
+   "field_asli_kamus": "Volume Transaksi (Miliar Saham)",
+   "label_standar": "Volume Transaksi (Miliar Saham)",
+   "deskripsi": "Total volume transaksi saham selama periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Miliar saham",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Pasar Modal",
+   "domain": "Pasar Modal",
+   "field_asli_kamus": "Nilai Perdagangan (Rp Triliun)",
+   "label_standar": "Nilai Perdagangan (Rp Triliun)",
+   "deskripsi": "Total nilai perdagangan saham selama periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Rp triliun",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Pasar Modal",
+   "domain": "Pasar Modal",
+   "field_asli_kamus": "Frekuensi Transaksi (Ribu kali)",
+   "label_standar": "Frekuensi Transaksi (Ribu kali)",
+   "deskripsi": "Total frekuensi transaksi selama periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Ribu kali",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Pembiayaan",
+   "domain": "Lembaga Pembiayaan - Perusahaan Pembiayaan",
+   "field_asli_kamus": "Periode",
+   "label_standar": "Periode",
+   "deskripsi": "Tanggal akhir bulan observasi; pada file sumber disimpan sebagai angka berformat YYYYMMDD.",
+   "tipe_data": "Tanggal kunci (numerik YYYYMMDD)",
+   "unit_raw": "Tanggal (YYYYMMDD)",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Pembiayaan",
+   "domain": "Lembaga Pembiayaan - Perusahaan Pembiayaan",
+   "field_asli_kamus": "Total Aset",
+   "label_standar": "Total Aset",
+   "deskripsi": "Total aset agregat subsektor pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Pembiayaan",
+   "domain": "Lembaga Pembiayaan - Perusahaan Pembiayaan",
+   "field_asli_kamus": "Piutang Pembiayaan",
+   "label_standar": "Piutang Pembiayaan",
+   "deskripsi": "Total piutang pembiayaan pada akhir periode.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Pembiayaan",
+   "domain": "Lembaga Pembiayaan - Perusahaan Pembiayaan",
+   "field_asli_kamus": "Laba",
+   "label_standar": "Laba",
+   "deskripsi": "Nilai laba subsektor pada periode berjalan sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "Tidak tercantum pada header sumber",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Pembiayaan",
+   "domain": "Lembaga Pembiayaan - Perusahaan Pembiayaan",
+   "field_asli_kamus": "Rasio FAR",
+   "label_standar": "Rasio FAR",
+   "deskripsi": "Financing to Asset Ratio (FAR), indikator porsi piutang/pembiayaan terhadap aset sesuai definisi sumber.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Pembiayaan",
+   "domain": "Lembaga Pembiayaan - Perusahaan Pembiayaan",
+   "field_asli_kamus": "Rasio Rasio GR",
+   "label_standar": "Rasio GR",
+   "deskripsi": "Gearing Ratio (GR) sesuai nomenklatur sumber; nama header mengandung pengulangan kata 'Rasio'.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Pembiayaan",
+   "domain": "Lembaga Pembiayaan - Perusahaan Pembiayaan",
+   "field_asli_kamus": "Rasio NPF",
+   "label_standar": "Rasio NPF",
+   "deskripsi": "Non-Performing Financing (NPF), indikator kualitas piutang pembiayaan.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Pembiayaan",
+   "domain": "Lembaga Pembiayaan - Perusahaan Pembiayaan",
+   "field_asli_kamus": "Rasio ROA",
+   "label_standar": "Rasio ROA",
+   "deskripsi": "Return on Assets (ROA), indikator profitabilitas berbasis aset.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Pembiayaan",
+   "domain": "Lembaga Pembiayaan - Perusahaan Pembiayaan",
+   "field_asli_kamus": "Rasio ROE",
+   "label_standar": "Rasio ROE",
+   "deskripsi": "Return on Equity (ROE), indikator profitabilitas berbasis ekuitas.",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  },
+  {
+   "sheet": "Perusahaan Pembiayaan",
+   "domain": "Lembaga Pembiayaan - Perusahaan Pembiayaan",
+   "field_asli_kamus": "Rasio BOPO",
+   "label_standar": "Rasio BOPO",
+   "deskripsi": "Rasio Beban Operasional terhadap Pendapatan Operasional (BOPO).",
+   "tipe_data": "Numerik",
+   "unit_raw": "%",
+   "frekuensi": "Bulanan"
+  }
+ ],
+ "metadata": [
+  {
+   "sheet": "Bank Umum",
+   "domain": "Perbankan - Bank Umum",
+   "frekuensi": "Bulanan",
+   "grain": "Agregat subsektor per akhir bulan",
+   "time_key": "Periode"
+  },
+  {
+   "sheet": "BPR",
+   "domain": "Perbankan - Bank Perekonomian Rakyat (BPR)",
+   "frekuensi": "Bulanan",
+   "grain": "Agregat subsektor per akhir bulan",
+   "time_key": "Periode"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Jiwa",
+   "domain": "Perasuransian - Asuransi Jiwa",
+   "frekuensi": "Bulanan",
+   "grain": "Agregat subsektor per akhir bulan",
+   "time_key": "Periode"
+  },
+  {
+   "sheet": "Perusahaan Asuransi Umum",
+   "domain": "Perasuransian - Asuransi Umum",
+   "frekuensi": "Bulanan",
+   "grain": "Agregat subsektor per akhir bulan",
+   "time_key": "Periode"
+  },
+  {
+   "sheet": "Perusahaan Reasuransi",
+   "domain": "Perasuransian - Reasuransi",
+   "frekuensi": "Bulanan",
+   "grain": "Agregat subsektor per akhir bulan",
+   "time_key": "Periode"
+  },
+  {
+   "sheet": "Dana Pensiun",
+   "domain": "Dana Pensiun",
+   "frekuensi": "Bulanan",
+   "grain": "Agregat subsektor per akhir bulan",
+   "time_key": "Periode"
+  },
+  {
+   "sheet": "Pasar Modal",
+   "domain": "Pasar Modal",
+   "frekuensi": "Bulanan",
+   "grain": "Agregat subsektor per akhir bulan",
+   "time_key": "Periode"
+  },
+  {
+   "sheet": "Perusahaan Pembiayaan",
+   "domain": "Lembaga Pembiayaan - Perusahaan Pembiayaan",
+   "frekuensi": "Bulanan",
+   "grain": "Agregat subsektor per akhir bulan",
+   "time_key": "Periode"
+  }
+ ]
+}

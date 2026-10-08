@@ -1,0 +1,4 @@
+{
+  "_catatan": "Konversi satuan HANYA dijalankan bila tercantum eksplisit di sini dan dapat diaudit. Default kosong: OASIS tidak mengasumsikan arti 'Rp M' (juta atau miliar) maupun hubungan Rp M dengan Rp triliun. Contoh entri: {\"dari\": \"Rp triliun\", \"ke\": \"Rp miliar\", \"faktor\": 1000, \"dasar\": \"definisi SI\", \"disetujui_oleh\": \"nama/unit\", \"tanggal\": \"2026-10-01\"}",
+  "konversi": []
+}

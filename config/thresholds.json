@@ -1,0 +1,13 @@
+{
+  "_catatan": "SEMUA threshold di file ini adalah THRESHOLD SIMULASI untuk keperluan demo. Nilai-nilai ini BUKAN batas regulasi OJK dan tidak boleh diklaim demikian. Ganti/isi 'sumber' dengan dasar resmi bila tersedia. 'arah': 'atas' = perhatian bila nilai > batas; 'bawah' = perhatian bila nilai < batas.",
+  "threshold": [
+    {"konsep": "npl", "arah": "atas", "nilai": 5.0, "label": "NPL 5% (threshold simulasi)", "sumber": "threshold simulasi/konfigurasi demo"},
+    {"konsep": "npf", "arah": "atas", "nilai": 5.0, "label": "NPF 5% (threshold simulasi)", "sumber": "threshold simulasi/konfigurasi demo"},
+    {"konsep": "car", "arah": "bawah", "nilai": 12.0, "label": "CAR 12% (threshold simulasi)", "sumber": "threshold simulasi/konfigurasi demo"},
+    {"konsep": "bopo", "arah": "atas", "nilai": 90.0, "label": "BOPO 90% (threshold simulasi)", "sumber": "threshold simulasi/konfigurasi demo"},
+    {"konsep": "combined_ratio", "arah": "atas", "nilai": 100.0, "label": "Combined ratio 100% (threshold simulasi)", "sumber": "threshold simulasi/konfigurasi demo"},
+    {"konsep": "rbc", "arah": "bawah", "nilai": 120.0, "label": "RBC 120 (threshold simulasi; satuan RBC belum terkonfirmasi)", "sumber": "threshold simulasi/konfigurasi demo"},
+    {"konsep": "rasio_likuiditas", "arah": "bawah", "nilai": 100.0, "label": "Rasio likuiditas 100% (threshold simulasi)", "sumber": "threshold simulasi/konfigurasi demo"},
+    {"konsep": "roa", "arah": "bawah", "nilai": 0.0, "label": "ROA 0% (threshold simulasi)", "sumber": "threshold simulasi/konfigurasi demo"}
+  ]
+}

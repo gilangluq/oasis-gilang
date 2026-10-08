@@ -1,0 +1,683 @@
+{
+ "_catatan": "Pemetaan konsep indikator untuk parser pertanyaan. 'labels' dicocokkan secara persis dengan Label Standar dari Kamus_Data setelah normalisasi (huruf kecil, tanpa keterangan dalam kurung, tanpa akhiran nama subsektor). Konsep TIDAK menambah field baru: indikator yang tidak cocok dengan konsep mana pun tetap dapat ditanyakan melalui label aslinya. 'arah_perhatian' hanya dipakai untuk deteksi 'Perlu Perhatian' (bukan penilaian regulasi).",
+ "subsektor": {
+  "Bank Umum": [
+   "bank umum",
+   "perbankan umum",
+   "bank konvensional",
+   "commercial bank"
+  ],
+  "BPR": [
+   "bpr",
+   "bank perekonomian rakyat",
+   "bank perkreditan rakyat",
+   "rural bank"
+  ],
+  "Perusahaan Asuransi Jiwa": [
+   "asuransi jiwa",
+   "life insurance"
+  ],
+  "Perusahaan Asuransi Umum": [
+   "asuransi umum",
+   "asuransi kerugian",
+   "general insurance"
+  ],
+  "Perusahaan Reasuransi": [
+   "reasuransi",
+   "reinsurance",
+   "perusahaan reasuransi"
+  ],
+  "Dana Pensiun": [
+   "dana pensiun",
+   "dapen",
+   "pension fund",
+   "dp"
+  ],
+  "Pasar Modal": [
+   "pasar modal",
+   "bursa",
+   "bursa efek",
+   "capital market",
+   "saham"
+  ],
+  "Perusahaan Pembiayaan": [
+   "perusahaan pembiayaan",
+   "pembiayaan",
+   "multifinance",
+   "leasing",
+   "lembaga pembiayaan"
+  ]
+ },
+ "kelompok_subsektor": {
+  "asuransi": [
+   "Perusahaan Asuransi Jiwa",
+   "Perusahaan Asuransi Umum",
+   "Perusahaan Reasuransi"
+  ],
+  "perasuransian": [
+   "Perusahaan Asuransi Jiwa",
+   "Perusahaan Asuransi Umum",
+   "Perusahaan Reasuransi"
+  ],
+  "perbankan": [
+   "Bank Umum",
+   "BPR"
+  ],
+  "bank": [
+   "Bank Umum",
+   "BPR"
+  ],
+  "iknb": [
+   "Perusahaan Asuransi Jiwa",
+   "Perusahaan Asuransi Umum",
+   "Perusahaan Reasuransi",
+   "Dana Pensiun",
+   "Perusahaan Pembiayaan"
+  ]
+ },
+ "konsep": [
+  {
+   "id": "total_aset",
+   "nama": "Total Aset",
+   "labels": [
+    "total aset"
+   ],
+   "sinonim": [
+    "total aset",
+    "total asset",
+    "aset",
+    "asset",
+    "aktiva"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "total_kredit",
+   "nama": "Total Kredit",
+   "labels": [
+    "total kredit"
+   ],
+   "sinonim": [
+    "total kredit",
+    "kredit",
+    "pinjaman",
+    "penyaluran kredit",
+    "loan"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "dpk",
+   "nama": "Dana Pihak Ketiga",
+   "labels": [
+    "total dpk",
+    "dpk"
+   ],
+   "sinonim": [
+    "dpk",
+    "total dpk",
+    "dana pihak ketiga",
+    "simpanan",
+    "third party fund"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "giro",
+   "nama": "Giro",
+   "labels": [
+    "giro"
+   ],
+   "sinonim": [
+    "giro",
+    "demand deposit"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "tabungan",
+   "nama": "Tabungan",
+   "labels": [
+    "tabungan"
+   ],
+   "sinonim": [
+    "tabungan",
+    "saving"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "deposito",
+   "nama": "Deposito",
+   "labels": [
+    "deposito",
+    "deposito berjangka"
+   ],
+   "sinonim": [
+    "deposito",
+    "deposito berjangka",
+    "time deposit"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "laba",
+   "nama": "Laba",
+   "labels": [
+    "laba"
+   ],
+   "sinonim": [
+    "laba",
+    "keuntungan",
+    "profit",
+    "laba bersih",
+    "earning"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "ldr",
+   "nama": "Rasio LDR",
+   "labels": [
+    "rasio ldr"
+   ],
+   "sinonim": [
+    "ldr",
+    "loan to deposit",
+    "rasio ldr",
+    "loan to deposit ratio"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "car",
+   "nama": "Rasio CAR",
+   "labels": [
+    "rasio car"
+   ],
+   "sinonim": [
+    "car",
+    "kecukupan modal",
+    "capital adequacy",
+    "rasio car",
+    "permodalan"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "npl",
+   "nama": "Rasio NPL",
+   "labels": [
+    "rasio npl"
+   ],
+   "sinonim": [
+    "npl",
+    "rasio npl",
+    "kredit bermasalah",
+    "non performing loan",
+    "kualitas kredit"
+   ],
+   "arah_perhatian": "naik_memburuk"
+  },
+  {
+   "id": "nim",
+   "nama": "Rasio NIM",
+   "labels": [
+    "rasio nim"
+   ],
+   "sinonim": [
+    "nim",
+    "net interest margin",
+    "margin bunga",
+    "rasio nim"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "bopo",
+   "nama": "Rasio BOPO",
+   "labels": [
+    "rasio bopo"
+   ],
+   "sinonim": [
+    "bopo",
+    "rasio bopo",
+    "efisiensi operasional",
+    "beban operasional terhadap pendapatan operasional"
+   ],
+   "arah_perhatian": "naik_memburuk"
+  },
+  {
+   "id": "roa",
+   "nama": "ROA",
+   "labels": [
+    "rasio roa",
+    "roa"
+   ],
+   "sinonim": [
+    "roa",
+    "rasio roa",
+    "return on asset",
+    "return on assets",
+    "rentabilitas aset"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "roe",
+   "nama": "ROE",
+   "labels": [
+    "rasio roe"
+   ],
+   "sinonim": [
+    "roe",
+    "rasio roe",
+    "return on equity",
+    "rentabilitas ekuitas"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "npf",
+   "nama": "Rasio NPF",
+   "labels": [
+    "rasio npf"
+   ],
+   "sinonim": [
+    "npf",
+    "rasio npf",
+    "pembiayaan bermasalah",
+    "non performing financing",
+    "piutang bermasalah"
+   ],
+   "arah_perhatian": "naik_memburuk"
+  },
+  {
+   "id": "far",
+   "nama": "Rasio FAR",
+   "labels": [
+    "rasio far"
+   ],
+   "sinonim": [
+    "far",
+    "rasio far",
+    "financing to asset"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "gr",
+   "nama": "Rasio GR (Gearing Ratio)",
+   "labels": [
+    "rasio gr"
+   ],
+   "sinonim": [
+    "gearing ratio",
+    "gearing",
+    "rasio gr",
+    "gr"
+   ],
+   "arah_perhatian": "naik_memburuk"
+  },
+  {
+   "id": "piutang_pembiayaan",
+   "nama": "Piutang Pembiayaan",
+   "labels": [
+    "piutang pembiayaan",
+    "piutang"
+   ],
+   "sinonim": [
+    "piutang pembiayaan",
+    "piutang",
+    "outstanding pembiayaan",
+    "penyaluran pembiayaan"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "rbc",
+   "nama": "RBC",
+   "labels": [
+    "rbc"
+   ],
+   "sinonim": [
+    "rbc",
+    "risk based capital",
+    "solvabilitas",
+    "tingkat solvabilitas"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "combined_ratio",
+   "nama": "Combined Ratio",
+   "labels": [
+    "combined rasio"
+   ],
+   "sinonim": [
+    "combined ratio",
+    "combined rasio",
+    "rasio gabungan"
+   ],
+   "arah_perhatian": "naik_memburuk"
+  },
+  {
+   "id": "rasio_beban_usaha",
+   "nama": "Rasio Beban Usaha",
+   "labels": [
+    "rasio beban usaha"
+   ],
+   "sinonim": [
+    "rasio beban usaha",
+    "beban usaha"
+   ],
+   "arah_perhatian": "naik_memburuk"
+  },
+  {
+   "id": "rasio_kecukupan_investasi",
+   "nama": "Rasio Kecukupan Investasi",
+   "labels": [
+    "rasio kecukupan investasi"
+   ],
+   "sinonim": [
+    "rasio kecukupan investasi",
+    "kecukupan investasi"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "rasio_klaim",
+   "nama": "Rasio Klaim",
+   "labels": [
+    "rasio klaim"
+   ],
+   "sinonim": [
+    "rasio klaim",
+    "claim ratio",
+    "loss ratio"
+   ],
+   "arah_perhatian": "naik_memburuk"
+  },
+  {
+   "id": "rasio_likuiditas",
+   "nama": "Rasio Likuiditas",
+   "labels": [
+    "rasio likuiditas"
+   ],
+   "sinonim": [
+    "rasio likuiditas",
+    "likuiditas",
+    "liquidity ratio"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "total_bukan_investasi",
+   "nama": "Total Bukan Investasi",
+   "labels": [
+    "total bukan investasi"
+   ],
+   "sinonim": [
+    "total bukan investasi",
+    "bukan investasi",
+    "aset bukan investasi"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "tagihan_klaim_reasuransi",
+   "nama": "Tagihan Klaim Reasuransi",
+   "labels": [
+    "tagihan klaim reasuransi"
+   ],
+   "sinonim": [
+    "tagihan klaim reasuransi",
+    "klaim reasuransi"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "tagihan_klaim_koasuransi",
+   "nama": "Tagihan Klaim Koasuransi",
+   "labels": [
+    "tagihan klaim koasuransi"
+   ],
+   "sinonim": [
+    "tagihan klaim koasuransi",
+    "klaim koasuransi",
+    "koasuransi"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "tagihan_premi_reasuransi",
+   "nama": "Tagihan Premi Reasuransi",
+   "labels": [
+    "tagihan premi reasuransi"
+   ],
+   "sinonim": [
+    "tagihan premi reasuransi",
+    "premi reasuransi"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "tagihan_premi_langsung",
+   "nama": "Tagihan Premi Penutupan Langsung",
+   "labels": [
+    "tagihan premi penutupan langsung"
+   ],
+   "sinonim": [
+    "tagihan premi penutupan langsung",
+    "premi penutupan langsung",
+    "premi langsung"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "total_investasi",
+   "nama": "Total Investasi",
+   "labels": [
+    "total investasi"
+   ],
+   "sinonim": [
+    "total investasi",
+    "investasi",
+    "portofolio investasi",
+    "nilai investasi"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "sbn",
+   "nama": "SBN",
+   "labels": [
+    "sbn"
+   ],
+   "sinonim": [
+    "sbn",
+    "surat berharga negara",
+    "obligasi negara"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "obligasi_korporasi",
+   "nama": "Obligasi Korporasi",
+   "labels": [
+    "obligasi korporasi"
+   ],
+   "sinonim": [
+    "obligasi korporasi",
+    "corporate bond",
+    "obligasi swasta"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "aset_neto",
+   "nama": "Aset Neto",
+   "labels": [
+    "aset neto"
+   ],
+   "sinonim": [
+    "aset neto",
+    "aset bersih",
+    "net asset"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "roi_r",
+   "nama": "ROI R",
+   "labels": [
+    "roi r"
+   ],
+   "sinonim": [
+    "roi r",
+    "roi realized",
+    "roi realisasi"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "roi_ru",
+   "nama": "ROI R+U",
+   "labels": [
+    "roi r+u"
+   ],
+   "sinonim": [
+    "roi r+u",
+    "roi r u",
+    "roi realized unrealized",
+    "roi total"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "rasio_investasi_aset",
+   "nama": "Rasio Investasi Terhadap Aset",
+   "labels": [
+    "rasio investasi terhadap aset"
+   ],
+   "sinonim": [
+    "rasio investasi terhadap aset",
+    "investasi terhadap aset"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "ihsg",
+   "nama": "IHSG",
+   "labels": [
+    "ihsg"
+   ],
+   "sinonim": [
+    "ihsg",
+    "indeks harga saham gabungan",
+    "indeks saham",
+    "jci",
+    "composite index"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "perusahaan_tercatat",
+   "nama": "Perusahaan Tercatat",
+   "labels": [
+    "perusahaan tercatat"
+   ],
+   "sinonim": [
+    "perusahaan tercatat",
+    "emiten",
+    "jumlah emiten",
+    "listed companies"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "kapitalisasi_pasar",
+   "nama": "Kapitalisasi Pasar",
+   "labels": [
+    "kapitalisasi pasar"
+   ],
+   "sinonim": [
+    "kapitalisasi pasar",
+    "kapitalisasi",
+    "market cap",
+    "market capitalization"
+   ],
+   "arah_perhatian": "turun_memburuk"
+  },
+  {
+   "id": "volume_transaksi",
+   "nama": "Volume Transaksi",
+   "labels": [
+    "volume transaksi"
+   ],
+   "sinonim": [
+    "volume transaksi",
+    "volume perdagangan",
+    "volume saham"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "nilai_perdagangan",
+   "nama": "Nilai Perdagangan",
+   "labels": [
+    "nilai perdagangan"
+   ],
+   "sinonim": [
+    "nilai perdagangan",
+    "nilai transaksi",
+    "turnover"
+   ],
+   "arah_perhatian": null
+  },
+  {
+   "id": "frekuensi_transaksi",
+   "nama": "Frekuensi Transaksi",
+   "labels": [
+    "frekuensi transaksi"
+   ],
+   "sinonim": [
+    "frekuensi transaksi",
+    "frekuensi perdagangan",
+    "jumlah transaksi"
+   ],
+   "arah_perhatian": null
+  }
+ ],
+ "sinonim_ambigu": {
+  "klaim": [
+   "rasio_klaim",
+   "tagihan_klaim_reasuransi",
+   "tagihan_klaim_koasuransi"
+  ],
+  "premi": [
+   "tagihan_premi_langsung",
+   "tagihan_premi_reasuransi"
+  ],
+  "roi": [
+   "roi_r",
+   "roi_ru"
+  ],
+  "profitabilitas": [
+   "roa",
+   "roe"
+  ],
+  "rentabilitas": [
+   "roa",
+   "roe"
+  ],
+  "kualitas aset": [
+   "npl",
+   "npf"
+  ],
+  "rasio kredit bermasalah": [
+   "npl",
+   "npf"
+  ]
+ }
+}
